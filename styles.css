@@ -1,7 +1,7 @@
 body {
-    background-image: url('bkg.jpg');
+    background-color: peachpuff;
     font-family: 'Georgia';
-    font-size: 5vw;
+    font-size: 3%vw;
     font-weight: 400;
     line-height: 1.5;
     margin: 35px 70px 50px 90px;
@@ -16,8 +16,8 @@ body {
 }
 
 .header {
-    background-color: LightSeaGreen;
-    color: BlanchedAlmond;
+    background-color: linen;
+    color: darkolivegreen;
     margin-bottom: 2rem;
     padding: 2rem 1rem;
     text-align: center;
@@ -26,27 +26,23 @@ body {
 h1 {
     font-family: 'Georgia', serif;
     font-size: 10vw;
-    color: blanchedalmond;
+    color: darkolivegreen;
+    text-align: center;
 }
 
 
 .footer {
     text-align: left;
     padding: 3px;
-    background-color: LightSeaGreen;
+    background-color: darkolivegreen;
     color: BlanchedAlmond;
 }
 
-/* center images */
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 button {
 
-    background-color: Plum;
+    background-color: palevioletred;
+    color: linen;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     font-size: 0.95rem;
@@ -63,22 +59,22 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: LightSalmon;
+    background-color: lightseagreen;
   }
   
   ul.topnav li {float: left;}
   
   ul.topnav li a {
     display: block;
-    color: midnightblue;
+    color: linen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-  ul.topnav li a:hover:not(.active) {background-color: lightsalmon;}
+  ul.topnav li a:hover:not(.active) {background-color: lightseagreen;}
   
-  ul.topnav li a.active {background-color: peachpuff;}
+  ul.topnav li a.active {background-color: cadetblue;}
   
   ul.topnav li.right {float: right;}
   
@@ -88,11 +84,15 @@ ul.topnav {
   }
 
   table, th, td {
-    border: 1px solid transparent;
+    border: 1px solid peachpuff;
     border-collapse: collapse;
     padding: 10px;
   }
 
-  th, td {
-    background-color: lightseagreen;
+  th {
+    background-color: steelblue;
+  }
+
+  td {
+    background-color: powderblue;
   }
