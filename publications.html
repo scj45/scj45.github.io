@@ -17,36 +17,14 @@
 
     <body>
         <div class="container">
+            <ul class="topnav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li class="right"><a href="publications.html">Publications</a></li>
+                <li class="right"><a href="https://github.com/scj45">Github</a></li>
+                <li class="right"><a href="./cv.pdf">CV</a></li>
+            </ul> 
+
             <div class="table-responsive">
-                <ul class="topnav">
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="right"><a href="#about">About</a></li>
-                </ul>
-
-                <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i></button>
-                <script>
-                    // Get the button
-                    let mybutton = document.getElementById("top");
-
-                    // When the user scrolls down 20px from the top of the document, show the button
-                    window.onscroll = function() {scrollFunction()};
-
-                    function scrollFunction() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        mybutton.style.display = "block";
-                    } else {
-                        mybutton.style.display = "none";
-                    }
-                    }
-
-                    // When the user clicks on the button, scroll to the top of the document
-                    function topFunction() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                    }
-                </script>
 
                 <table class="table">
                     <thead>
