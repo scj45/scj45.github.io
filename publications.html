@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <h1>Stephanie C. Jat</h1>
+
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="table-responsive">
+                <ul class="topnav">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="right"><a href="#about">About</a></li>
+                </ul>
+
+                <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i></button>
+                <script>
+                    // Get the button
+                    let mybutton = document.getElementById("top");
+
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {scrollFunction()};
+
+                    function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                    }
+
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                    }
+                </script>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Journal/Conference</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Citation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pausing and the ‘Othello Error’: Patterns of pausing in truthful and deceptive speech in the DyViS database</td>
+                            <td>International Journal of Speech, Language and the Law</td>
+                            <td>18-08-2023</td>
+                            <td><a href="https://www.researchgate.net/publication/373191234_Pausing_and_the_'Othello_Error'_Patterns_of_pausing_in_truthful_and_deceptive_speech_in_the_DyViS_database">Published</a></td>
+                            <td>Jat, Stephanie & McDougall, Kirsty & Paver, Alice. (2023). Pausing and the ‘Othello Error’: Patterns of pausing in truthful and deceptive speech in the DyViS database. International Journal of Speech, Language and the Law. 30. 87-118. 10.1558/ijsll.24331.</td>
+                        </tr>
+                        <tr>
+                            <td>‘How does your patient, doctor?’ A brief discussion on bias within healthcare-related NLP advances</td>
+                            <td>Interspeech</td>
+                            <td>12-02-2025</td>
+                            <td>Submitted</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>

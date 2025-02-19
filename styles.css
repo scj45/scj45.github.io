@@ -1,43 +1,11 @@
 body {
-    background-image: url('./bkgd.jpeg');
+    background-image: url('bkgd.jpeg');
     font-family: 'Georgia';
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     margin: 35px 70px 50px 90px;
     text-align: left;
-}
-
-/* make a top navigation bar */
-.menu {
-    overflow: hidden;
-    background-color: LightSalmon;
-  }
-
-.menu a {
-    float: left;
-    color: MidnightBlue;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.menu a:hover {
-    background-color: Salmon;
-    color: MidnightBlue;
-}
-
-/* right-aligned (split) link inside the menu bar */
-.menu a.split {
-    float: right;
-    background-color: PeachPuff;
-    color: MidnightBlue;
-}
-
-.menu a.split:hover {
-    background-color: LightSalmon;
-    color: MidnightBlue;
 }
 
 .container {
@@ -57,7 +25,8 @@ body {
 
 h1 {
     font-family: 'Georgia', serif;
-    font-size: 48px;
+    font-size: 10vw;
+    color: blanchedalmond;
 }
 
 
@@ -75,7 +44,7 @@ h1 {
     margin-right: auto;
 }
 
-button, input[type="submit"] {
+button {
 
     background-color: Plum;
     border: 1px solid transparent;
@@ -89,22 +58,41 @@ button, input[type="submit"] {
     vertical-align: middle;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: LightSalmon;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: midnightblue;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    border-radius: 50%;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: lightsalmon;}
+  
+  ul.topnav li a.active {background-color: peachpuff;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
   }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
+  table, th, td {
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    padding: 10px;
+  }
 
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
+  th, td {
+    background-color: lightseagreen;
+  }
